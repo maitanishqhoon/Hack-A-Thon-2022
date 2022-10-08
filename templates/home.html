@@ -490,8 +490,9 @@
         </div>
 
         <div class="wlcm-img">
-            <img class="rlfk" src="../static/realfake.png" />
-            <img class="igimg" src="../static/Instagram_logo_2016.svg.png" />
+
+            <img class="rlfk" src="{{ url_for('static', filename = 'realfake.png')}}" />
+            <img class="igimg" src="{{ url_for('static', filename = 'Instagram_logo_2016.svg.png') }}" />
         </div>
     </section>
 
@@ -527,9 +528,11 @@
     <section class="s3" id="login">
         <div class="container-ig">
             <div class="select1 reveal">
-                <button class="btn">
-                    <a href="./login.html"><img src="../static/Instagram_logo_2016.svg.png" /></a>
+              <form method="POST">
+                <button type="submit">
+                    <img src="{{ url_for('static', filename = 'Instagram_logo_2016.svg.png') }}" /></a>
                 </button>
+              </form>
             </div>
         </div>
         <div class="login">
