@@ -285,7 +285,7 @@
       color: #eebbc3;
     }
     button {
-      background-color: #eebbc3;
+      background: linear-gradient(#cc2b5e, #753a88);
       border: 0px;
     }
     .igimg {
@@ -423,13 +423,18 @@
         color: blue;
     }
     .btn{
-      background-color: mediumslateblue;
+      background-color: powderblue;
       transition: 0.7s ease-in-out;
       border-bottom: #753a88;
+      transition: 0.7s ease-in-out;
+      background: linear-gradient(#cc2b5e, #753a88);
+      border-radius: 20px;
     }
     .btn:hover{
-      background-color:powderblue ;
-      transition: 0.7s all 0.3s ease;
+      
+      transform: scale(0.8);
+      background: linear-gradient(#753a88, #cc2b5e);
+      
     }
     .contact{
       margin-top: 15px;
@@ -453,9 +458,9 @@
   
   <nav class="nav">
       <ul class="nav-links">
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#stp">Steps</a></li>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#details">Details</a></li>
       </ul>
   </nav>
   
@@ -490,7 +495,7 @@
         </div>
     </section>
 
-    <section class="s2">
+    <section class="s2" id="stp">
         <h1>Steps of our working</h1>
         <div class="steps">
             <div class="line">
@@ -519,7 +524,7 @@
         </div>
     </section>
 
-    <section class="s3">
+    <section class="s3" id="login">
         <div class="container-ig">
             <div class="select1 reveal">
                 <button class="btn">
@@ -567,7 +572,7 @@
         };
     </script>
 
-    <footer class="details">
+    <footer class="details" id="details">
         <h1 class="contact">Contact Us :</h1>
         <ul class="name">
             <li >Pratham Chellani</li><br>
